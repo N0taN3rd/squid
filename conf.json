@@ -2,8 +2,6 @@
   "use": "puppeteer",
   "headless": true,
   "script": "./userFns.js",
-  "mode": "page-only",
-  "depth": 1,
   "seeds": [
     "https://www.instagram.com/visit_berlin/"
   ],
@@ -19,6 +17,8 @@
     "globalWait": 60000,
     "inflightIdle": 1000,
     "numInflight": 2,
-    "navWait": 8000
+    "navWait": 8000,
+    "mode": "page-same-domain",
+    "depth": 5
   }
 }
